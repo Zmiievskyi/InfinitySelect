@@ -16,11 +16,11 @@ const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
-    <HashRouter basename="/infinitySelect">
+    <BrowserRouter basename="/infinitySelect">
     <Provider store={store}>
       <App />
     </Provider>
-    </HashRouter>
+    </BrowserRouter>
 );
 
 reportWebVitals();
