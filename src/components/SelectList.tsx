@@ -14,14 +14,12 @@ const checkboxOptions = [
 ];
 
 export const SelectList = () => {
-  const [selectedOption, setSelectedOption] = useState("");
+  const [_, setSelectedOption] = useState("");
 
   const title = useAppSelector((state) => state.tree.title);
   const dispatch = useAppDispatch();
 
   const handleSelectChange = (value: string, idx: number | undefined) => {
-    console.log("selectedValue", value);
-
     setSelectedOption(value);
 
     if (idx === title.length - 1) {
